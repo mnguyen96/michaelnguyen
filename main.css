@@ -65,7 +65,7 @@ header {
     header .header-text {
         z-index: 2;
         position: relative;
-        padding-top: 8.5%;
+        padding-top: 8%;
         text-align: center;}
         header .header-text h1.header-name {
             margin-top: .8em;
