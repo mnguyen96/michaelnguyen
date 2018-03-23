@@ -64,7 +64,7 @@ header {
         header .header-text p.header-subtitle {
             font-style: oblique;
             font-size: 30px;
-            margin-top: -.5em;
+            margin-top: -.9em;
             color: rgb(255, 255, 255);
             font-weight: 300; }
 
@@ -150,6 +150,7 @@ header {
     }
     .resume-download {
         border-radius: 5px;
+        margin-top: -1em;
         margin-bottom: 5%;
         padding: 5px;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.212), 0 3px 10px rgba(0, 0, 0, 0.137);
