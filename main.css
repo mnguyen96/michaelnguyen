@@ -4,8 +4,6 @@ body {
     font-weight: 100;
     overflow-x: hidden;
     font-family: 'Karla', sans-serif;
-    
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,25 +25,14 @@ a:visited {
 
 #phone {
     color: rgb(255, 255, 255);
+    font-size: 18px;
 }
-#messenger {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: monospace;
-    font-size: 20px;
-    white-space: nowrap;
-    text-shadow: 0 2px 2px rgba(#000, 0.9);
-  }
   
-
 header {
     width: 100%;
     position: relative;
     height: 75%;
     background-color: white; 
-    letter-spacing: 2.5px;
     
 }
     header .stripe-container {
@@ -76,7 +63,7 @@ header {
             color: white; }
         header .header-text p.header-subtitle {
             font-style: oblique;
-            font-size: 24px;
+            font-size: 30px;
             margin-top: -.5em;
             color: rgb(255, 255, 255);
             font-weight: 300; }
@@ -171,7 +158,6 @@ header {
         width: fit-content;
         margin-left:auto;
         margin-right:auto;
-        
     }
         .resume-download a {
           color: #ebebeb; }
