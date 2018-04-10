@@ -21,7 +21,7 @@ a:visited {
 }
 a:hover {
     transition: all .2s ease-in-out;
-    transform: translateX(2px);
+    transform: scale(1.1);
 }
 
 a.project_link {
@@ -131,14 +131,14 @@ span.term {
     margin-top: 0.8em;
     border-radius: 5px;
 }
+    .language.languages{
+        margin-left: 5%;
+    }
     
 .content {
     float: left;
 }
-.icon {
-    margin-top: 5px;
-    display: inline-block;
-}
+
 .right {
     float: right;
     }
@@ -158,37 +158,13 @@ span.term {
     .resume .title {
         color: rgb(0, 123, 255);
     }
-    .resume-download {
-        border-radius: 5px;
-        margin-top: -1em;
-        margin-bottom: 5%;
-        padding: .3%;
-        background-color: rgb(0, 123, 255);
-        text-align: center;
-        width: 22%;
-        margin-left:auto;
-        margin-right:auto;
-        transition: all .2s ease-in-out;
+    .resume .project{
+        margin-top: 8%;
+        font-size: 15px;
+        padding-left: 45%;
+
     }
-    .resume-download:hover {
-        transition: all .2s ease-in-out;
-        transform: translateX(7px);
-    }
-    
-        .resume-download a {
-          color: #ebebeb; }
 
-
-
-.resume .project{
-    margin-top: 8%;
-    font-size: 15px;
-    padding-left: 45%;
-
-}
-.language.languages{
-    margin-left: 5%;
-}
 @media (max-width:600px)  {
     .img-rounded {
         height: 20%;
