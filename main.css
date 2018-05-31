@@ -72,7 +72,7 @@ header .header-text {
     position: relative;
     width: 50%;
     margin-left: 32%;
-    padding-top: 15%;
+    padding-top: 14%;
     text-align: left;
 }
 
@@ -260,7 +260,7 @@ span.left {
 }
 
 
-@media (max-height:720px) and (max-width: 1280px) {
+@media (min-height:720px) and (max-width: 1280px) {
 
     header .header-text {
         z-index: 2;
@@ -284,7 +284,7 @@ span.left {
     }
 }
 
-@media (max-height:768px) and (max-width: 1366px) {
+@media (min-height:768px) and (min-width: 1366px) {
 
     header .header-text {
         z-index: 2;
