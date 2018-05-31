@@ -3,7 +3,7 @@ html, body {
     font-weight: 100;
     overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
-    background: rgb(41, 51, 64);
+    background: rgb(49, 65, 87);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 a:link {
     color: inherit;
     transition: all .2s ease-in-out;
-    display: inline-block;
+    
 }
 
 a:visited {
@@ -22,13 +22,14 @@ a:visited {
 
 a:hover {
     transition: all .2s ease-in-out;
-    transform: scale(1.04);
+    transform: scale(1.03);
 }
 
 .img-rounded {
-    margin-top: 15%;
-    margin-left: 30%;
+    margin-top: 5%;
     margin-right: 3%;
+    margin-bottom: 5%;
+    border-radius: 50%;
     z-index: 2;
     position: relative;
     float: left;
@@ -69,7 +70,9 @@ header .stripe-container .stripe:nth-child(2n) {
 header .header-text {
     z-index: 2;
     position: relative;
-    padding-top: 10%;
+    width: 50%;
+    margin-left: 32%;
+    padding-top: 15%;
     text-align: left;
 }
 
@@ -78,43 +81,25 @@ header .contact {
 }
 
 header .header-text h1.header-name {
-    margin-top: 1.7em;
+    margin-top: 7%;
+    padding-bottom: .7%;
     font-size: 3.5em;
     color: white;
     line-height: .5em;
 }
 
 header .header-text .header-subtitle {
-    font-style: oblique;
     font-size: 1.5em;
     color: white;
-    font-weight: 200;
+    font-weight: 50;
     line-height: 1.3em;
 }
-
-/* .intro_title {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 5px;
-    position: relative;
-}
-.intro_title:before{
-    content: "";
-    position: absolute;
-    width: 15%;
-    height: 1px;
-    bottom: 25;
-    left: 45%;
-    border-bottom: 1px solid red;
-} */
 
 h2 {
     font-family: "Playfair Display";
     font-size: 45px;
     color: white;
     text-align: center;
-    padding-bottom: 2%;
     position: relative;
 }
 
@@ -123,7 +108,7 @@ h2:before {
     position: absolute;
     width: 27%;
     height: 1px;
-    bottom: 0;
+    bottom: -10px;
     left: 36.5%;
     border-bottom: 1px solid #6ca7ff;
 }
@@ -131,9 +116,8 @@ h2:before {
 .social {
     display:block;
     text-align:center;
+    margin-bottom: 5%;
 }
-
-
 
 .about {
     border-radius: 9px;
@@ -172,7 +156,6 @@ span.left {
 
 .container {
     width: 100%;
-    margin: auto;
 }
 
 .language {
@@ -181,13 +164,18 @@ span.left {
     border: 1px solid rgb(218, 218, 218);
     border-radius: 50%;
     text-align: center;
-    margin: 12px 12px 12px 0;
-    padding: 0;
-    width: 100px;
-    height: 100px;
-    line-height: 7;
+    margin: 12px 12px 6px 0;
+    height: 6em;
+    width: 6em;
+    line-height: 6;
     font-size: 14px
-    
+
+}
+
+#technical {
+    display: block;
+    float: left;
+    width: 50%
 }
 
 .proj_languages {
@@ -196,14 +184,14 @@ span.left {
     border-style: solid;
     border-color: rgb(0, 94, 255);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 100;
     display: inline-block;
     color: rgb(0, 94, 255);
-    font-size: 13px;
-    padding: 5px 8px;
-    margin-top: 0.8em;
+    font-size: .7em;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 5px;
     border-radius: 3px;
-
+    border-spacing: 20%;
 }
 
 .tools {
@@ -224,68 +212,141 @@ span.left {
     background: rgb(19, 19, 19);
     color: rgb(255, 255, 255);
     height: auto;
-    margin-top: -40px;
+    padding-top: 2.5%;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 8%;
-}
-
-.resume .title {
-    margin-bottom: 5%;
-    color: white;
-    font-size: 25px;
-}
-
-.project {
-    color: white;
-    float: left;
-    font-size: 18px;
-    padding-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.project .proj__title {
-    display: inline;
-    font-size: 20px;
-}
-
-.project .desc {
-    float: left;
+    padding-bottom: 5%;
 }
 
 .title {
-    font-size: 30px;
     margin-bottom: 10%;
+    margin-top: 20%;
+    color: white;
+    font-size: 20px;
+}
+    
+.portfolio {
+    background: white;
+    width: 100%;
+    margin-top: 5%;
 }
 
-@media (max-width:600px) {
+.project {
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 18px;
+    margin: 5% 10% 10% 10%;
+    position: static;
+}
+
+.node {
+    background-color:rgb(19,19,19);
+    width: 31.3%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: fit-content;
+}
+
+.proj_desc {
+    margin: 4% 4% 12% 4%;
+}
+
+.project .proj__title {
+    font-size: 20px;
+}
+
+
+@media (max-height:720px) and (max-width: 1280px) {
+
+    header .header-text {
+        z-index: 2;
+        position: relative;
+        width: 50%;
+        margin-left: 30%;
+        padding-top: 15%;
+        text-align: left;
+    }
+}
+
+@media (max-height:768px) and (max-width: 1024px) {
+
+    header .header-text {
+        z-index: 2;
+        position: relative;
+        width: 50%;
+        margin-left: 28%;
+        padding-top: 20%;
+        text-align: left;
+    }
+}
+
+@media (max-height:768px) and (max-width: 1366px) {
+
+    header .header-text {
+        z-index: 2;
+        position: relative;
+        width: 50%;
+        margin-left: 26%;
+        padding-top: 12%;
+        text-align: left;
+    }
+}
+
+@media (max-width:800px) {
     .img-rounded {
-        height: 20%;
-        width: 20%;
+        background-size: 100% 100%;
+        margin-right: 50%;
+        height: 30%;
+        width: 30%;
         align-content: center;
-        margin-left: 40%;
-        margin-top: 30%;
-        /* margin-right: auto; */
+        margin-top: 20%;
+        margin-left: 35%;
         float: left;
     }
-    header .header-text {
-        text-align: center;
+    header {
+        background-position-x: 40%;
+        background-repeat: no-repeat;
     }
+    header .stripe-container {
+        opacity: .6;
+        z-index: 1;
+        position: absolute;
+        width: 130%;
+        margin-top: -10%;
+        margin-left: -20%;
+    }
+
+    header .stripe-container .stripe {
+        margin-top: -10;
+        left: 0;
+        right: -15em;
+        height: 15em;
+        -webkit-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        property: value;
+    }
+
+    header .header-text {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     header .header-text h1.header-name {
-        margin-top: 6em;
         font-size: 2em;
         padding-bottom: -50%;
         color: white;
         text-align: center;
     }
-    header .header-text p.header-subtitle {
-        font-style: oblique;
+    header .header-text .header-subtitle {
         font-size: 20px;
-        margin-top: -.9em;
+        margin-top: 0;
         color: rgb(255, 255, 255);
         text-align: center;
         font-weight: 300;
@@ -293,11 +354,14 @@ span.left {
     .content {
         align-content: center;
         width: 20%;
-        margin-left: 40%;
         margin-right: 100%;
         margin-bottom: 5%;
         margin-top: -10%;
         filter: invert(10) grayscale(100%);
+    }
+    header .contact {
+        font-size: 18px;
+        margin-left: 0%;
     }
     span.term {
         font-size: 12px;
@@ -322,33 +386,67 @@ span.left {
         margin-left: auto;
         margin-right: auto;
     }
+    h2 {
+        font-size: 27px;
+    }
+    h2:before {
+        content: "";
+        position: absolute;
+        width: 27%;
+        height: 1px;
+        bottom: -25%;
+        left: 36.5%;
+        border-bottom: 1px solid #6ca7ff;
+    }
     .about {
         border-radius: 5px;
-        margin: 0 auto;
+        margin: 15% auto;
         padding-top: 20px;
         font-size: 15px;
+        width: 90%;
         background: rgb(216, 216, 216);
-        height: 30%;
+        height: 20%;
         font-family: 'Monaco', 'Courier New';
         text-align: left;
         font-size: 13px;
         color: #fafafa;
-        width: 100%;
     }
     #console {
         padding: 40px;
         height: auto;
         margin: 0 auto;
-        background: #363636;
+        background: #2b2b2b;
         width: 100%;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .language {
+        font-family: 'Inconsolata', sans-serif;
+        display: inline-block;
+        border: 1px solid rgb(167, 167, 167);
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px 10px 10px 0;
+        padding: 0;
+        width: 80px;
+        height: 80px;
+        line-height: 6;
+        font-size: 14px;
+    }
+    .tools {
+        float: left;
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    #technical {
+        display: block;
+        float: left;
+        width: 120%
     }
     #resume {
-        background: rgb(255, 255, 255);
+        background: rgb(19, 19, 19);
         height: auto;
-        margin-top: -10px;
-        padding-top: 60px;
         font-size: 19px;
         line-height: 34px;
         width: auto;
@@ -356,14 +454,33 @@ span.left {
         margin-right: -30px;
         font-size: 1.1em;
     }
-    .resume .project {
-        /* max-width: 600px; */
+    /* .title:before {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 6%;
+        bottom: 1;
+        border-bottom: 1px solid #6ca7ff;
+    }
+    .title {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    } */
+    
+    .node {
+        background-color:rgb(19,19,19);
+        width: 100%;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 15%;
+        height: fit-content;
+    }
+    .project {
         font-size: 15px;
         margin-top: 10%;
-        padding-left: -20%;
-        margin-left: -30%;
-    }
-    .language.languages {
-        margin-left: 5%;
     }
 }

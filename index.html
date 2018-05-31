@@ -8,7 +8,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <script src="https://use.fontawesome.com/ec530995c6.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
@@ -30,9 +30,9 @@
       <div class="stripe"></div>
       <div class="stripe"></div>
     </div>
-    <img src="me.jpg" alt="me" width="10%" height="10%" class="img-rounded">
-    <div class="header-text">
 
+    <div class="header-text">
+      <img src="me.jpg" alt="me" width="20%" height="20%" class="img-rounded">
       <h1 class="header-name">
         MICHAEL NGUYEN
       </h1>
@@ -47,7 +47,6 @@
           <a href="#resume">Resume</a>&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#projects">Projects</a>
         </div>
-
       </div>
     </div>
 
@@ -96,36 +95,26 @@
 
     </div>
   </div>
-  <h2>Contact me on social media!</h2><br>
-  <div class = "social">
-  <a href="https://www.facebook.com/MichaelNuggen"><i class="fab fa-facebook-square" style="font-size: 50px;color: white;padding: 15px;"></i></a>
-  <a href="https://github.com/mnguyen96"><i class="fab fa-github"style="font-size: 50px;color: white;padding: 15px;"></i></a>
-</div>
+  <h2>Connect with me!</h2>
   <br>
-  <br>
-  <br>
-  <br>
+  <div class="social">
+    <a href="https://www.facebook.com/MichaelNuggen">
+      <i class="fab fa-facebook-square" style="font-size: 5em;color: white;padding: .2em;"></i>
+    </a>
+    <a href="https://github.com/mnguyen96">
+      <i class="fab fa-github" style="font-size: 5em;color: white;padding: .2em;"></i>
+    </a>
+  </div>
 
-  
-  <br>
   <div class="resume" id="resume">
-    <br>
-    <br>
     <h2>
-      <i>
-        <a href="resume.pdf" target="_blank">Resume</a>
-      </i>
+      <a href="resume.pdf" target="_blank">Resume</a>
     </h2>
-
     <br>
-
-
-
     <p style="text-align:left;">
       <b class="title">Education</b>
       <br>
       <br>
-
 
       <img src="umd.png" class="content" width="11%" height="11%">
       <span class="left">University of Maryland, College Park</span>
@@ -158,11 +147,9 @@
 
 
       <section class="container">
-        <div id="technical" style=" display: block;float: left;width: 50%">
+        <div id="technical">
           <b class="title">Languages</b>
-          <br>
-          <br>
-          <ul>
+          <ul style="list-style-type: none;padding-left:0;">
             <li class="language">Java</li>
             <li class="language">C</li>
             <li class="language">Ruby</li>
@@ -174,10 +161,8 @@
         </div>
         <section class="tools">
           <span>
-            <b class="title">Tools</b>
+            <b class="title" >Tools</b>
           </span>
-          <br>
-          <br>
           <ul style="list-style-type: none;padding-left:0;">
             <li>
               <span class=" glyphicon glyphicon-thumbs-up" style="color: white;"></span>&nbsp;&nbsp;Photoshop CS6</li>
@@ -195,40 +180,65 @@
         </section>
       </section>
 
-
   </div>
-  <div class="project" id="projects">
-    <h2>Some of My Projects</h2>
-    <br>
-    <br>
-    <img src="weather.jpg" width="70%" height="70%" class="content" style="padding-bottom: 3%;padding-right: 5%; filter: none;width: 100%">
+  <h2 style="margin-top: 5%;">Some of My Projects</h2>
 
-    <a href="https://github.com/mnguyen96/weather/blob/gh-pages/README.md">
-      <div class="proj__title" style="float:left; font-size: 25px;">
-        <i>Weather Helper</i>
+  <div class="project" id="projects">
+
+
+
+    <br>
+
+    <div class="node">
+      
+      <img src="weather.png" width="70%" height="70%" class="content" style="padding-bottom: 3%; filter: none;width: 100%;">
+  
+      <div class = "proj_desc">
+      
+        <div class="proj__title" style="float:left; font-size: 1em; width: 100%; margin-bottom: 3%">
+            <a href="https://github.com/mnguyen96/weather/blob/gh-pages/README.md"><b>Weather Helper</b> </a>
+        </div>
+     
+
+      
+      <div class="desc" style="font-size: .8em; width: 100%;">This was my first project using React and JSX. It was my first time exploring web development outside of the typical
+        HTML and CSS. The application pulls weather data from the OpenWeatherMap API and displays the data as well as a clothing
+        recommendation based on the weather information.
       </div>
-    </a>
-    <br>
-    <br>
-    <div class="desc">This was my first project using React and JSX. It was my first time exploring web development outside of the typical
-      HTML and CSS. The application pulls weather data from the OpenWeatherMap API and displays the data as well as a clothing
-      recommendation based on the weather information.
+
+      <div style="float: left; margin-top: 5%; margin-bottom: 5%; width: 100%;">
+        <span class="proj_languages">HTML</span>
+        <span class="proj_languages">CSS</span>
+        <span class="proj_languages">JavaScript</span>
+        <span class="proj_languages">React</span>
+        <span class="proj_languages">JSX</span>
+      </div>
+    </div>
     </div>
 
-    <p style="float: left;">
-      <span class="proj_languages">HTML</span>
-      <span class="proj_languages">CSS</span>
-      <span class="proj_languages">JavaScript</span>
-      <span class="proj_languages">React</span>
-      <span class="proj_languages">JSX</span>
-<br><br><br>
-    </p>
+    <div class="node">
+      
+      <img src="vis.png" width="70%" height="70%" class="content" style="padding-bottom: 3%; filter: none;width: 100%;">
+
+      <div class = "proj_desc">
+      
+        <div class="proj__title" style="float:left; font-size: 1em; width: 100%; margin-bottom: 3%">
+            <a href="https://mnguyen96.github.io/audiovisualizer/index.html"><b>Audio Visualizer</b></a>
+        </div>
+      
+
+      
+      <div class="desc" style="font-size: .8em; width: 100%;">I made an audio visualizer using Javascript and Three.js. Using the Web Audio API, the program analyzes frequency data from a AnalyserNode and displays a specific hue and height based on the read frequency. 
+      </div>
+
+      <div style="float: left; margin-top: 5%; width: 100%;margin-bottom: 5%;">
+        <span class="proj_languages">HTML</span>
+        <span class="proj_languages">CSS</span>
+        <span class="proj_languages">JavaScript</span>
+      </div>
+    </div>
+    </div>
   </div>
-
-
-  <br>
-
-
 </body>
 
 </html>
