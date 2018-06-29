@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 a:link {
     color: inherit;
     transition: all .2s ease-in-out;
-    
 }
 
 a:visited {
@@ -21,9 +20,9 @@ a:visited {
 }
 
 a:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
+
 a:hover img{
     transition: all .2s ease-in-out;
     transform: scale(1.03);
@@ -40,6 +39,32 @@ a:hover img{
     position: relative;
 }
 
+.moving-letters {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+  }
+    .ml6 {
+      position: relative;
+      font-weight: 900;
+      font-size: 3.3em;
+    }
+    .ml6 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+      padding-right: 0.05em;
+      padding-bottom: 0.1em;
+      overflow: hidden;
+    }
+    .ml6 .letter {
+      display: inline-block;
+      line-height: 1em;
+    }
+    
 header {
     width: 100%;
     height: 100%;
@@ -48,6 +73,9 @@ header {
     background-image: url("header.jpg");
     background-size: cover;
     background-blend-mode: darken;
+    -webkit-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
 }
 
 header .stripe-container {
@@ -105,6 +133,14 @@ header .header-text .header-subtitle {
     line-height: 1.3em;
 }
 
+.link_button {
+    background-color: white;
+    border: none;
+    width: fit-content;
+    text-transform: capitalize;
+    padding: 5px 20px 5px 20px;
+}
+
 h2 {
     font-family: "Playfair Display";
     font-size: 45px;
@@ -112,6 +148,15 @@ h2 {
     text-align: center;
     position: relative;
     margin-bottom: 50px;
+    width: 100%;
+}
+h3 {
+    font-family: "Playfair Display";
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 5%;
     width: 100%;
 }
 
@@ -134,7 +179,7 @@ h2:before {
 
 .about {
     border-radius: 9px;
-    margin: 10% auto 10% auto;
+    margin: 0 auto 10% auto;
     padding-top: 20px;
     font-size: 30px;
     background: rgb(233, 233, 233);
