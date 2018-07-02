@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+
 a:link {
     color: inherit;
     transition: all .2s ease-in-out;
@@ -30,56 +31,31 @@ a:hover img{
 
 .img-rounded {
     display: block;
-    margin-top: 5%;
-    margin-right: 3%;
-    margin-left: -15%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 50%;
+    width: 20%;
+    height: 20%;
     z-index: 2;
     position: relative;
 }
 
-.moving-letters {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 200px;
-  }
-    .ml6 {
-      position: relative;
-      font-weight: 900;
-      font-size: 3.3em;
-    }
-    .ml6 .text-wrapper {
-      position: relative;
-      display: inline-block;
-      padding-top: 0.2em;
-      padding-right: 0.05em;
-      padding-bottom: 0.1em;
-      overflow: hidden;
-    }
-    .ml6 .letter {
-      display: inline-block;
-      line-height: 1em;
-    }
-    
 header {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url("header.jpg");
+    background: linear-gradient(45deg, #6cc4ff, #1078ff8f);
+    /* background-image: url("header.jpg"); */
     background-size: cover;
-    background-blend-mode: darken;
     -webkit-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
 }
 
-header .stripe-container {
-    opacity: .6;
+/* header .stripe-container {
+    opacity: .3;
     z-index: 1;
     position: absolute;
     width: 130%;
@@ -90,16 +66,25 @@ header .stripe-container {
 header .stripe-container .stripe {
     left: 0;
     right: -15em;
-    height: 20em;
+    height: 15em;
     -webkit-transform: rotate(8deg);
     -ms-transform: rotate(8deg);
     -moz-transform: rotate(8deg);
     property: value;
-}
+} */
 
-header .stripe-container .stripe:nth-child(2n) {
-    background: linear-gradient(45deg, #6ca7ff, #105cff);
-}
+/* header .stripe-container .stripe:nth-child(2n-2) {
+    
+} */
+/* header .stripe-container .stripe {
+    background: linear-gradient(45deg, #6ca7ff, #10e3ff);
+} */
+/* header .stripe-container .stripe:nth-child(3n - 2) {
+    background-color: #7280fd; }
+  header .stripe-container .stripe:nth-child(3n - 1) {
+    background-color: #9ab7ff; }
+  header .stripe-container .stripe:nth-child(3n) {
+    background: linear-gradient(45deg, #487dff, #7280fd); } */
 
 header .header-text {
     display: flex;
@@ -108,10 +93,10 @@ header .header-text {
     z-index: 2;
     position: relative;
     width: 50%;
-    margin-left: 32%;
-    padding-top: 14%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 20%;
-    text-align: left;
+    text-align: center;
 }
 
 header .contact {
@@ -156,8 +141,10 @@ h3 {
     color: white;
     text-align: center;
     position: relative;
-    padding-top: 5%;
     width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0;
 }
 
 h2:before {
@@ -169,6 +156,14 @@ h2:before {
     left: 36.5%;
     
     border-bottom: 1px solid #6ca7ff;
+}
+
+.aboutContainer {
+    background-image: url("header.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 29px 0px rgba(0,0,0,0.75);
 }
 
 .social {
@@ -270,13 +265,13 @@ span.left {
     background: rgb(19, 19, 19);
     color: rgb(255, 255, 255);
     height: auto;
-    padding-top: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 5%;
 }
 
 .title {
@@ -308,7 +303,6 @@ span.left {
     position: static;
 }
 .project_overlay {
-    padding-bottom: 5%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .61), rgba(0, 0, 0, .61), rgba(0, 0, 0, .61), rgba(0, 0, 0, .61), rgba(0, 0, 0, .61));    
     width: 100%;
     height: 100%;
@@ -374,35 +368,36 @@ span.left {
 @media (max-width:800px) {
     .img-rounded {
         background-size: 100% 100%;
-        margin-right: 50%;
-        height: 30%;
-        width: 30%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50%;
+        width: 50%;
         align-content: center;
         margin-top: 20%;
-        margin-left: 35%;
-        float: left;
+        margin-bottom: 0;
     }
     header {
         background-position-x: 40%;
         background-repeat: no-repeat;
     }
     header .stripe-container {
-        opacity: .6;
+        opacity: .8;
         z-index: 1;
         position: absolute;
-        width: 130%;
+        width: 150%;
         margin-top: -9%;
         margin-left: -20%;
+        background: linear-gradient(45deg, #6ca7ff, #10e3ff);
     }
 
     header .stripe-container .stripe {
-        margin-top: -10;
+        margin-top: -15%;
         left: 0;
         right: -15em;
-        height: 15em;
-        -webkit-transform: rotate(8deg);
-        -ms-transform: rotate(8deg);
-        -moz-transform: rotate(8deg);
+        height: 25em;
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
         property: value;
     }
 
@@ -411,6 +406,7 @@ span.left {
         text-align: center;
         margin-left: 0;
         margin-right: 0;
+        padding-top: 0;
     }
 
     header .header-text h1.header-name {
@@ -446,9 +442,6 @@ span.left {
     }
     span.right {
         margin-left: 2em;
-    }
-    .header-text {
-        padding-top: 50%;
     }
     .resume-download {
         border-radius: 5px;
@@ -555,5 +548,12 @@ span.left {
     .project {
         font-size: 15px;
         margin-top: 10%;
+    }
+    .project_background {
+        background-position: 700px 500px 0 700px;
+        background-size: 700%;
+        background-blend-mode: darken;
+        background-image: url("sp.jpg");
+        overflow: hidden;
     }
 }

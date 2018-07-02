@@ -11,10 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <script src="https://use.fontawesome.com/ec530995c6.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script>var ml = { timelines: {}};</script>
-  <script src="anime.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
@@ -28,20 +24,16 @@
 <body>
 
   <header class="one-edge-shadow" id="head">
-    <div class="project_overlay">
-      <div class="stripe-container">
+    <!-- <div class="project_overlay"> -->
+      <!-- <div class="stripe-container">
         <div class="stripe"></div>
-        <div class="stripe"></div>
-        <div class="stripe"></div>
-      </div>
-
+      </div> -->
+      <img src="me.jpg" alt="me" class="img-rounded">
       <div class="header-text">
-        <img src="me.jpg" alt="me" width="20%" height="20%" class="img-rounded">
-        
         <div class="header-subtitle">
           <h1 class="header-name">MICHAEL NGUYEN</h1>
-          Student | Computer Science Major
-          <div class="contact">301-512-7729 |
+          Student | Software Developer
+          <div class="contact">
             <a href="mailto:MichaelAlexNguyen@gmail.com">
               MichaelAlexNguyen@gmail.com
             </a>
@@ -53,62 +45,13 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </header>
-  <script>
-  var buttonEl = document.querySelector('#link');
-
-function animateButton(scale, duration, elasticity) {
-  anime.remove(buttonEl);
-  anime({
-    targets: buttonEl,
-    scale: scale,
-    duration: duration,
-    elasticity: elasticity
-  });
-}
-
-function enterButton() { animateButton(1.2, 800, 400) };
-function leaveButton() { animateButton(1.0, 600, 300) };
-
-buttonEl.addEventListener('mouseenter', enterButton, false);
-buttonEl.addEventListener('mouseleave', leaveButton, false);
-</script>
+  <div class = "aboutContainer" id = "about">
+  <div class="project_overlay">
   
-</div>
-
-<div class="moving-letters" id="about">
-    <h3 class="ml6">
-  <span class="text-wrapper">
-    <span class="letters">Hello, World! Welcome to my personal website!</span>
-  </span>
-</h3>
-
-<script>
-  // Wrap every letter in a span
-  $('.ml6 .letters').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-  });
-  ml.timelines["ml6"] = anime.timeline({loop: true})
-    .add({
-      targets: '.ml6 .letter',
-      translateY: ["1.2em", 0],
-      translateZ: 0,
-      duration: 750,
-      delay: function(el, i) {
-        return 50 * i;
-      }
-    }).add({
-      targets: '.ml6',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-    });
-  </script>
-  
-  
-  </div>
+    
+      <h3>Hello world! Welcome to my website!</h3>
   <div class="about" >
     <div class="about" id="console">
 
@@ -148,7 +91,8 @@ buttonEl.addEventListener('mouseleave', leaveButton, false);
 
     </div>
   </div>
-
+</div>
+</div>
 
   <div class="resume" id="resume" >
     
@@ -170,11 +114,10 @@ buttonEl.addEventListener('mouseleave', leaveButton, false);
     <br>
     <span class="left">Minor in Philosophy</span>
     <br>
-    <br>
-    <br>
 
+<div style="padding-top: 5%">
 
-    <b class="title">Coursework</b>
+    <b class="title" >Coursework</b>
     <ul type="circle">
       <ul type="circle"></ul>
 
@@ -183,13 +126,11 @@ buttonEl.addEventListener('mouseleave', leaveButton, false);
           <li>Introduction to Cryptography
             <li>Algorithms
               <li>Object-Oriented Programming
-                <li>Organization of Programming Languages
                   <li>Discrete Structures
                     <li>Linear Algebra
     </ul>
-
-
-    <section class="container">
+  </div>
+    <section class="container" style="padding-top: 5%">
       <div id="technical">
         <b class="title">Languages</b>
         <ul style="list-style-type: none;padding-left:0;">
@@ -234,37 +175,9 @@ buttonEl.addEventListener('mouseleave', leaveButton, false);
 
 
       <div class="project" id="projects">
-        <h2 style="margin-top: 0">Some of My Projects</h2>
+        <h2 style="margin-top: 0">My Projects</h2>
 
-        <div class="node">
-          <a href="https://github.com/mnguyen96/weather/blob/gh-pages/README.md">
-            <img src="weather.png" width="70%" height="70%" class="content" style="padding-bottom: 3%; filter: none;width: 100%;">
-          </a>
-          <div class="proj_desc">
-
-            <div class="proj__title" style="font-size: 1em; width: 100%; margin-bottom: 3%">
-              <b>Weather Helper</b>
-            </div>
-
-
-
-            <div class="desc" style="font-size: .8em; width: 100%;">This was my first project using React and JSX. It was my first time exploring web development outside of the
-              typical HTML and CSS. The application pulls weather data from the OpenWeatherMap API and displays the data
-              as well as a clothing recommendation based on the weather information.
-            </div>
-
-            <div style="margin-top: 5%; margin-bottom: 5%; width: 100%;">
-              <span class="proj_languages">HTML</span>
-              <span class="proj_languages">CSS</span>
-              <span class="proj_languages">JavaScript</span>
-              <span class="proj_languages">React</span>
-              <span class="proj_languages">JSX</span>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="node">
+        <div class="node" style="padding-top: 5%">
           <a href="https://mnguyen96.github.io/audiovisualizer/index.html">
 
             <img src="vis.png" width="70%" height="70%" class="content" style="padding-bottom: 3%; filter: none;width: 100%;">
@@ -289,6 +202,33 @@ buttonEl.addEventListener('mouseleave', leaveButton, false);
             </div>
           </div>
         </div>
+
+        <div class="node">
+          <a href="https://github.com/mnguyen96/weather/blob/gh-pages/README.md">
+            <img src="weather.png" width="70%" height="70%" class="content" style="padding-bottom: 3%; filter: none;width: 100%;">
+          </a>
+          <div class="proj_desc">
+
+            <div class="proj__title" style="font-size: 1em; width: 100%; margin-bottom: 3%">
+              <b>Weather Helper</b>
+            </div>
+
+            <div class="desc" style="font-size: .8em; width: 100%;">This was my first project using React and JSX. It was my first time exploring web development outside of the
+              typical HTML and CSS. The application pulls weather data from the OpenWeatherMap API and displays the data
+              as well as a clothing recommendation based on the weather information.
+            </div>
+
+            <div style="margin-top: 5%; margin-bottom: 5%; width: 100%;">
+              <span class="proj_languages">HTML</span>
+              <span class="proj_languages">CSS</span>
+              <span class="proj_languages">JavaScript</span>
+              <span class="proj_languages">React</span>
+              <span class="proj_languages">JSX</span>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
      
